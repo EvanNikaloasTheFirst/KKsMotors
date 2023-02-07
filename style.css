@@ -299,12 +299,14 @@ margin-bottom: 10px;
   }
 
   .success{
-    background: green;
+    /* background: green;
     pad: 5px 10px;
     text-align: center;
     border-radius: 3px;
     font-synthesis: 14px;
-    margin-top: 10px;
+    margin-top: 10px; */
+
+    display: none;
   }
 
   .success {
