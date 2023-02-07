@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cars</title>
+</head>
+<body>
+    <!-- Layout -->
+    <div class="container">
+        <div class="navbar">
+            <a href="index.html">
+                <img src="assets/logo.JPG" class="logo">
+              </a>
+            <nav>
+                <ul id="menuList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cars.html">Cars</a></li>
+                    <li><a href="How-to-book.html">How to book / Book</a></li>
+                    
+                </ul>
+            </nav>
+            <img src="assets/menubar2.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <!-- Layout -->
+
+ <div class="form-container">
+            <form action="post" name="emailContact">
+
+                <div class="input-row">
+                    <label>Name <em>*</em></label>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="input-row">
+                    <label>Email <em>*</em></label>
+                    <input type="text" name="email" required>
+                </div>
+                <div class="input-row">
+                    <label>Phone <em>*</em></label>
+                    <input type="text" name="phone" required>
+                </div>
+
+                <div class="input-row">
+                    <label>Car to rent <em>*</em></label>
+                    <textarea name="message" required></textarea>
+                </div>
+
+                <div class="input-row">
+                    <input type="submit" name="Send" value="Submit">
+                    <div class="success">
+                        <strong>Success</strong>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+<div class="main-container">
+    <h2>How to book</h2>
+
+    <div class="rules">
+    <ul >
+        <li>Instagram DM's are always open for bookings</li>
+        <ul>A £100 booking fee is required to secure the car, rest of the payment can be payed upon collection</ul>
+    </ul>
+</div>
+
+<div class="info">
+    <h3>Key things to tell us:</h3>
+    <ul>
+        <li>1.Choice of car</li>
+        <li>2.Date and time of rental</li>
+        <li>3.Length of rental</li>
+        <li>4.Location for pickup and returns (Drop off available for an extra fee)</li>
+    </div>
+
+    <div class="driverInfo">
+        <h4>Information needed as the driver:</h4>
+        <ul class="driverInfo">
+            <li>1.DVLA check code</li>
+            <li>2.Proof of address</li>
+            <li>3.Picture of license front & back</li>
+        </ul>
+    </ul>
+</div>
+
+
+</div>
+
+
+<!-- Layout -->
+<div class="social-links">
+    <img src="assets/ig.png" alt="">
+</div>
+</div>
+<script>
+var menuList = document.getElementById("menuList");
+menuList.style.maxHeight="0px";
+function togglemenu(){
+    if(menuList.style.display === "none") {
+menuList.style.display = "block";
+
+} else {
+menuList.style.display = "none";
+}
+}
+</script>
+<!-- Layout -->
+</body>
+</html>

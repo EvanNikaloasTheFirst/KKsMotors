@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+/* background-color: black; */
+}
+
+body{
+    background-color: black;
+    font-family: 'Mulish', sans-serif;
+}
+
+.container{
+    width: 100%;;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right:8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 75px;
+    cursor: pointer;
+    margin: 30px 0;
+    border-radius: 25px;
+}
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+    filter: invert(100);
+    background-color: transparent;
+    display: none;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style:none;
+    display: inline-block;
+    margin-right: 30px;
+   
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    color: white;
+}
+nav ul li a:hover{
+    color:#fb5283
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+
+.col-1 h2{
+    font-size: 54px;
+    font-weight: 100;
+    margin: 20px 0 10px;
+    color: white;
+    top: 10px;
+    position: relative;
+}
+
+.col-1 p{
+    font-size: 16px;
+    font-weight: 100;
+    color: rgb(182, 181, 181);
+    top: 15px;
+    position: relative;
+}
+
+button {
+    width: 140px;
+    height: 80px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(#fb5283, #ff3527);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: width 0.5s;
+    position: relative;
+    top: 60px;
+}
+
+button img
+{
+    filter: invert(100);
+    width: 30px;
+    display: none;
+}
+button:hover img{
+display: block;
+}
+button:hover{
+    display: flex;
+    align-items: center;
+    width: 160px;
+    justify-content: space-between;
+}
+
+.col-1::after{
+    content: '';
+    width: 10px;
+    height: 57%;
+    background: linear-gradient(#fb5283, #ff3527);
+    position: absolute;
+    left: -40px;
+    top: 35px;
+
+}
+
+.col-2{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+.col-2 .mainLogo{
+    width: 100%;
+    border-radius: 25px;
+}
+
+.social-links img{
+    /* height: 20px; */
+    /* margin: 20px; */
+    /* cursor: pointer;
+    filter: invert(100);
+    position: relative;
+    bottom: 0;
+    top: 20px;
+    margin-bottom: 10px; */
+    display: none;
+}
+
+
+.social-links {
+    text-align: center;
+}
+/* Card page  */
+
+.cards-container {
+    display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 20px;
+    
+    color: #fff;
+  }
+
+  .cards-container ul li{
+    list-style:none;
+
+  }
+
+  .card {
+    
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .cards-container img {
+    width: 100%;
+    border-radius: 7px;
+  }
+
+  
+
+
+  /* How to book page */
+  .main-container{
+   color: white;
+   /* background-color: red; */
+   border-radius: 25px;
+   height: 80%;
+   /* width: 100%; */
+   margin: 0 auto;
+
+  }
+
+  .rules{
+    padding: 15px;
+    text-align: center;
+    padding: 15px;
+    
+  }
+
+  .rules ul {
+    list-style: none;
+  }
+
+  .info{
+    padding: 15px;
+    text-align: center;
+    padding: 15px;
+    
+  }
+  .info ul {
+    list-style: none;
+  }
+
+  .driverInfo{
+    padding: 15px;
+    text-align: center;
+    padding: 15px;
+    
+  }
+  .driverInfo ul {
+    list-style: none;
+  }
+
+  .main-container h2, .main-container h3, .main-container h4 {
+    text-align: center;
+    font-weight: 200;
+    background: linear-gradient(#fb5283, #ff3527);
+    border-radius: 4px;
+    z-index: 3;
+    padding: 5px;
+    width: 100%;
+    position: relative;
+    top: 20px;
+  }
+
+  .main-container ul {
+    padding-top: 30px;
+  }
+
+  .main-container ul li {
+    padding-top: 5px;
+  }
+
+
+
+  /* Contact page */
+
+.form-container{
+    color: white;
+    width: 90%;
+    max-width: 650px;
+    margin: 0 auto;;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #252324;
+  }
+
+  .input-row{
+margin-bottom: 10px;
+  }
+
+  .input-row label{
+    display: block;
+    margin-bottom: 3px;
+  }
+  
+.input-row input , 
+.input-row textarea{
+    width: 95%;
+    padding: 10px;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+    margin-left: 3px;
+  }
+
+  .input-row textarea{
+    height: 100px;
+
+  }
+
+  .input-row input[type="submit"]{
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    background-color: #575556;
+    border: 2px solid white;
+  }
+
+  .success{
+    background: green;
+    pad: 5px 10px;
+    text-align: center;
+    border-radius: 3px;
+    font-synthesis: 14px;
+    margin-top: 10px;
+  }
+
+  .success {
+
+  }
+
+
+
+
+
+
+
+@media only screen and (max-width:700px){
+    nav ul{
+        width: 100%;
+        /* background: linear-gradient(#fb5283, #ff3527); */
+        background-color: white;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+        display: none;
+    }
+
+
+    nav ul li{
+
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+
+    nav ul li a{
+
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+
+    .menu-icon{
+    display: block;
+}
+.menuList{
+    /* overflow: hidden; */
+    transition: 0.5s;
+}
+
+
+
+.row{
+    flex-direction: column-reverse;
+    margin: 50px 0;
+}
+
+.col-2{
+    flex-basis: 100%;
+    margin-bottom: 50px;
+}
+
+.col-1{
+    flex-basis: 100%;
+}
+.col-1 h2{
+    font-size: 35px;
+}
+
+}
